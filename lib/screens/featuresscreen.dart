@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kbc_vinhack/screens/aboutusscreen.dart';
 import 'package:kbc_vinhack/screens/homescreen.dart';
 import 'package:kbc_vinhack/screens/profilescreen.dart';
 
@@ -18,12 +19,12 @@ class _FeaturesScreenState extends State<FeaturesScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Image(
+          const Image(
             image: AssetImage('images/app_logo.png'),
             height: 100.0,
             width: 100.0,
           ),
-          SizedBox(
+          const SizedBox(
             height: 55.0,
           ),
           Padding(
@@ -38,7 +39,7 @@ class _FeaturesScreenState extends State<FeaturesScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+                children: const [
                   SizedBox(
                     width: 20.0,
                   ),
@@ -63,7 +64,7 @@ class _FeaturesScreenState extends State<FeaturesScreen> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           Padding(
@@ -78,7 +79,7 @@ class _FeaturesScreenState extends State<FeaturesScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+                children: const [
                   SizedBox(
                     width: 20.0,
                   ),
@@ -103,47 +104,52 @@ class _FeaturesScreenState extends State<FeaturesScreen> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 37.0),
-            child: Container(
-              height: 55.0,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(12.0),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SizedBox(
-                    width: 20.0,
-                  ),
-                  Image(
-                    image: AssetImage('images/about_us.png'),
-                    height: 23,
-                    width: 23,
-                  ),
-                  SizedBox(
-                    width: 16.0,
-                  ),
-                  Text(
-                    'About Us',
-                    style: TextStyle(
-                      color: Color(0xFF526581),
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w600,
-                      fontSize: 15,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, AboutUsScreen.id);
+              },
+              child: Container(
+                height: 55.0,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: const [
+                    SizedBox(
+                      width: 20.0,
                     ),
-                  ),
-                ],
+                    Image(
+                      image: AssetImage('images/about_us.png'),
+                      height: 23,
+                      width: 23,
+                    ),
+                    SizedBox(
+                      width: 16.0,
+                    ),
+                    Text(
+                      'About Us',
+                      style: TextStyle(
+                        color: Color(0xFF526581),
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w600,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 55.0,
           ),
           const Image(

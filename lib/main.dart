@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kbc_vinhack/screens/aboutusscreen.dart';
 import 'package:kbc_vinhack/screens/featuresscreen.dart';
 import 'package:kbc_vinhack/screens/gatewayscreen.dart';
 import 'package:kbc_vinhack/screens/homescreen.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         ProfileScreen.id: (context) => const ProfileScreen(),
         HomeScreen.id: (context) => const HomeScreen(),
         FeaturesScreen.id: (context) => const FeaturesScreen(),
+        AboutUsScreen.id: (context) => const AboutUsScreen(),
       },
     );
   }
