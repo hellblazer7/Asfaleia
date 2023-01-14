@@ -22,13 +22,13 @@ class AboutUsScreen extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(context);
                 },
-                child: Image(
+                child: const Image(
                   image: AssetImage('images/back_arrow.png'),
                   height: 55,
                   width: 55,
                 ),
               ),
-              Center(
+              const Center(
                 child: Text(
                   'ABOUT US',
                   style: TextStyle(
@@ -39,7 +39,7 @@ class AboutUsScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              Image(
+              const Image(
                 image: AssetImage('images/app_logo.png'),
                 height: 45,
                 width: 45,
@@ -55,7 +55,7 @@ class AboutUsScreen extends StatelessWidget {
             ),
             child: Text(
               about_us,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Color(0xFF000000),
                 fontFamily: 'Poppins',
                 fontWeight: FontWeight.normal,
@@ -64,7 +64,7 @@ class AboutUsScreen extends StatelessWidget {
               textAlign: TextAlign.justify,
             ),
           ),
-          Image(
+          const Image(
             image: AssetImage('images/about_us_furniture.png'),
             height: 300,
             width: double.infinity,

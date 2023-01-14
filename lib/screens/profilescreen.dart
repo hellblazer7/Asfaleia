@@ -122,7 +122,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ],
           ),
           const SizedBox(
-            height: 75.0,
+            height: 55.0,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -143,7 +143,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ],
           ),
           const SizedBox(
-            height: 120.0,
+            height: 100.0,
           ),
           Container(
             height: 75.0,

@@ -25,7 +25,7 @@ class _FeaturesScreenState extends State<FeaturesScreen> {
             width: 100.0,
           ),
           const SizedBox(
-            height: 55.0,
+            height: 40.0,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 37.0),
